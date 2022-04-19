@@ -13,7 +13,7 @@ Author
 Project Domain Name:
 # mrms.semienfgbc.org
 Project Name:
-# Members' Registration and Management System [ MRMS - v1 ]
+# Members' Registration and Management System [ MRMS - v1.0 ]
 
 Client Church Name:
 # Semien Full Gospel Local Church
