@@ -21,16 +21,6 @@ class RolesDataSeeder extends Seeder {
      * @return void
      */
     public function run() {
-        RoleDataModel::truncate();
-
-        RoleDataModel::create (['roleName' => 'Super Administrator']);
-        RoleDataModel::create (['roleName' => 'Administrator']);
-        RoleDataModel::create (['roleName' => 'Manager']);
-        RoleDataModel::create (['roleName' => 'Moderator']);
-        RoleDataModel::create (['roleName' => 'Supervisor']);
-        RoleDataModel::create (['roleName' => 'Coordinator']);
-
-        RoleDataModel::create (['roleName' => 'Editor']);
-        RoleDataModel::create (['roleName' => 'Guest']);
+        // RoleDataModel::truncate();
     }
 }
