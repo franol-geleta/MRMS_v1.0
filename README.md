@@ -13,14 +13,14 @@ Author
 Project Domain Name:
 # mrms.semienfgbc.org
 Project Name:
-# Members' Registration and Management System [ MRMS ]
+# Members' Registration and Management System [ MRMS - v1 ]
 
 Client Church Name:
 # Semien Full Gospel Local Church
 <p align="center"><a href="https://semienfgbc.org" target="_blank"><img src="https://github.com/JoshKiyakoo/mrms.semienfgbc.org/blob/master/public/icon/FGBC_Fav_Icon.png" width="400"></a></p>
 
 Parent Church Name:
-# Ethiopian Full Gospel believers Church
+# Ethiopian Full Gospel Believers' Church
 
 # 
 
