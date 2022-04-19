@@ -29,9 +29,6 @@ class SFGBCRoleUserDataTable extends Migration {
             $table->timestamps();
             $table->softDeletes();
         });
-        // Schema::table('sfgbc_RoleUser', function (Blueprint $table) {
-        //     $table->foreignId ('idUserAccount', 20)->constrained('sfgbc_UserAccounts', 'idUserAccount');
-        // });
     }
 
     /**
