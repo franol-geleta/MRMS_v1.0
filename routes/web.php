@@ -56,14 +56,6 @@ use App\Http\Controllers\Settings\Users\RecoverUserDataController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// require __DIR__.'/auth.php';
-
-// Auth::routes();
 //Responds to request -> https://mrms.semienfgbc.org/
 Route::get('/', function () {
     return view('welcome');
@@ -97,8 +89,7 @@ Route::prefix('members')->as('members.')->group(function () {
     Route::get('/topdf', [MembersDataController::class, 'downloadPDF'])->middleware(['auth'])->name('topdf');
     Route::get('/toexcel', [MembersDataController::class, 'downloadEXCEL'])->middleware(['auth'])->name('toexcel');
     Route::get('/tocsv', [MembersDataController::class, 'downloadCSV'])->middleware(['auth'])->name('tocsv');
-    // Route::get('/autocomplete', [MembersDataController::class, 'autocomplete'])->middleware(['auth'])->name('autocomplete');
-
+    
     // Members' Deactivation Data
     Route::get('/deactivate/{idMember}', [DeactivateDataController::class, 'deactivateMember'])->middleware(['auth'])->name('deactivate');
     Route::put('/transfer/{idMember}', [DeactivateDataController::class, 'addTransferMember'])->middleware(['auth'])->name('transfer');
@@ -280,36 +271,3 @@ Route::prefix('setting')->as('setting.')->group(function () {
             Route::put('/modify/{idMember}', [OrganizationSetupController::class, 'modifyBrandNAme'])->middleware(['auth'])->name('brandname');
         });
     });
-
-//     // Church's System Backup and Restore
-//     Route::prefix('/automation')->as('automation.')->group(function () {
-//         Route::get('/view/{idMember}', [OrganizationSetupController::class, 'viewBrandNAme'], )->middleware(['auth'])->name('brandname');
-//         Route::put('/modify/{idMember}', [OrganizationSetupController::class, 'modifyBrandNAme'])->middleware(['auth'])->name('brandname');
-//     });
-});
-
-// ################################################################################################################################
-
-// // Testing Directory
-// Route::get('/test/education', function () {
-//     return view('test.education');
-// })->middleware(['auth'])->name('test.education');
-// Route::get('/test/family', function () {
-//     return view('test.family');
-// })->middleware(['auth'])->name('test.family');
-// Route::get('/test/sector', function () {
-//     return view('test.sector');
-// })->middleware(['auth'])->name('test.sector');
-// Route::get('/test/work', function () {
-//     return view('test.work');
-// })->middleware(['auth'])->name('test.fellowship');
-// Route::get('/test/fellowship', function () {
-//     return view('test.fellowship');
-// })->middleware(['auth'])->name('test.fellowship');
-
-
-// ################################################################################################################################
-// Auth::routes();
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware(['auth'])->name('home');
-
-// When no one is there to fix YOU, you fix YOURSELF.
