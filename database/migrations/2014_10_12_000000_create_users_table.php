@@ -20,31 +20,6 @@ class CreateUsersTable extends Migration {
      * @return void
      */
     public function up() {
-        // Schema::create('sfgbc_User_UserAccounts', function (Blueprint $table) {
-        //     $table->id('idUserAccount', 20)->unsigned();;
-        //     $table->string('isMember', 5)->default('No');
-        //     $table->string('userFirstName', 50)->nullable();
-        //     $table->string('userMiddleName', 50)->nullable();
-        //     $table->string('userLastName', 50)->nullable();
-        //     $table->string('userGender', 7)->nullable();
-        //     $table->string('userAvatar')->nullable();
-        //     $table->string('userUsername', 100)->unique();
-        //     $table->string('userPassword');
-        //     $table->string('userEmail', 100)->unique();
-        //     $table->string('accessRole', 70);
-        //     $table->string('accountStatus', 70);
-        //     $table->string('isBlocked', 5)->nullable()->default('No');
-        //     $table->string('isSuspended', 5)->nullable()->default('No');
-        //     $table->string('suspendedSince', 25)->nullable();
-        //     $table->string('suspendedUntil', 25)->nullable();
-        //     $table->longText('userAccountRemark')->nullable();
-        //     $table->timestamp('emailVerified_at')->nullable();
-
-        //     $table->rememberToken();
-        //     $table->timestamps();
-        //     $table->softDeletes();
-        // });
-
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
